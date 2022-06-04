@@ -7,6 +7,7 @@ import './App.css';
 import { Layout }                           from 'antd';
 import DataVallis                           from './images/logoSp.svg';
 import {SearchOutlined, DownCircleOutlined} from "@ant-design/icons";
+import AudioPlayer from './components/AudioPlayer';
 
 const { Footer, Sider, Content } = Layout;
 
@@ -44,7 +45,7 @@ const App = () => {
         </Layout>
         <Footer className="footer">
             {nftAlbum &&
-             <span>Hi</span>
+            <AudioPlayer nftAlbum={nftAlbum}/>
             }
         </Footer>
     </Layout>
